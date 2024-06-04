@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+// import CategoriesCardComponent from './Component/CategoriesCardComponent';
+// import AllCategoriesCard from './Component/AllCategoriesCard';
+// import CategoriesCardDetails from './Component/CategoriesCardDetails';
+// import PopularProducts from './Component/PopularProducts';
+// import VideoComponent from './Component/VideoComponent';
+// import ImageComponent from './Component/ImageComponent';
 
-function App() {
+// function App() {
+//   return (
+//     <>
+//     <CategoriesCardComponent/>
+//     <AllCategoriesCard/>
+//     <CategoriesCardDetails/>
+//     <PopularProducts/>
+//     <VideoComponent/>
+//     <ImageComponent/>
+//     </>
+//   );
+// }
+
+// export default App;
+
+import React from "react";
+import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import CategoriesCardComponent from "./Component/CategoriesCardComponent";
+import AllCategoriesCard from "./Component/AllCategoriesCard";
+import CategoriesCardDetails from "./Component/CategoriesCardDetails";
+import HomepageComponent from "./Component/HomepageComponent";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router> 
+      <Routes>
+        <Route path="/" element={<HomepageComponent />} />
+        <Route path="/category/:title" element={<AllCategoriesCard />} />
+        <Route path="/productDetails" element={<CategoriesCardDetails />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
+
