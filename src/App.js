@@ -29,6 +29,7 @@ import CategoriesCardComponent from "./Component/CategoriesCardComponent";
 import AllCategoriesCard from "./Component/AllCategoriesCard";
 import CategoriesCardDetails from "./Component/CategoriesCardDetails";
 import HomepageComponent from "./Component/HomepageComponent";
+import Dashboad from "./Component/Dashboad";
 const App = () => {
   return (
     <Router> 
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/productDetails" element={<CategoriesCardDetails />} />
       </Routes>
     </Router>
+   
   );
 };
 

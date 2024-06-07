@@ -29,9 +29,9 @@ const ImageComponent = () => {
       <h4 className='text-success fw-bold'>Farmer Reviews</h4>
       <div className="row">
         {reviews.map((review, index) => (
-          <div className="col-3" key={index}>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-sm-4" key={index}>
             <div className="card h-100">
-              <img src={review.imageUrl} className="card-img-top" alt={review.title} />
+              <img src={review.imageUrl} className="card-img-top" alt={review.title} width="10%" />
               <div className="card-body">
                 <h5 className="card-title">{review.title}</h5>
                 <p className="card-text">{review.description}</p>

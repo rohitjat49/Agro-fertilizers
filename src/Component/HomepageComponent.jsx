@@ -14,7 +14,7 @@ const HomepageComponent = () => {
     <div className="">
       <HeaderComponent />
       <div className="">
-        <img src="/img/sliderimg2.jpg" alt="img" className="w-full h-custom-height mt-5 pt-5" width="100%" />
+        <img src="/img/sliderimg2.jpg" alt="img" className="w-full h-custom-height " width="100%" />
       </div>
       <CategoriesCardComponent />
 

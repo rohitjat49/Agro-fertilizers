@@ -24,11 +24,12 @@ const VideoComponent = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <>
+     <div className="container mt-5">
       <h4 className='text-success fw-bold'>Farmer Reviews</h4>
-      <div className="row mt-3">
+      <div className="row mt-5">
         {videoUrls.map((url, index) => (
-          <div className="col-3" key={index}>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mb-sm-4" key={index}>
             <div className="video-wrapper" onClick={() => handlePlay(index)}>
               <ReactPlayer
                 url={url}
@@ -42,6 +43,9 @@ const VideoComponent = () => {
         ))}
       </div>
     </div>
+    
+    </>
+   
   );
 };
 

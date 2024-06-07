@@ -87,7 +87,7 @@ all categories  */
 .card-images img {
   object-fit: contain;
   height: 200px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.10s ease; 
 }
 
 .card-images img:hover {
@@ -315,39 +315,22 @@ all categories  */
   max-height: 45px;
 }
 
-@media (max-width: 991.98px) {
-  .sticky-top.navbar-dark {
-      position: relative;
-  }
+/* dashboard css  start*/
 
-  .navbar-dark .navbar-collapse {
-      margin-top: 15px;
-      border-top: 1px solid rgba(255, 255, 255, .1)
-  }
-
-  .navbar-dark .navbar-nav .nav-link,
-  .sticky-top.navbar-dark .navbar-nav .nav-link {
-      padding: 10px 0;
-      margin-left: 0;
-  }
-
-  .navbar-dark .navbar-brand img {
-      max-height: 45px;
-  }
+.dashboard p{
+  background-color: #fff;
+ padding: 10px;
 }
 
-@media (min-width: 992px) {
-  .navbar-dark {
-      position: absolute;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 999;
-      /* background: transparent !important; */
-  }
+
+
+.dashboard p a{
+  list-style: none;
+  text-decoration: none;
+  color: #38a169;
   
-  .sticky-top.navbar-dark {
-      position: fixed;
-      background: var(--dark) !important;
-  }
 }
+
+
+
+  
